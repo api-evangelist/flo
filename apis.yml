@@ -1,4 +1,16 @@
 aid: flo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flo.png
 name: Flo
 description: Flo is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -11,7 +23,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -20,3 +32,17 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: >-
+    Enrichment ran but the company identity could not be resolved to a confirmed
+    API provider. Source anthemis-portfolio.yml carries only the name "Flo" and the
+    Anthemis portfolio URL (no website), and Anthemis's portfolio page is behind
+    bot/captcha protection (sgcaptcha) so it could not be read. The one API-bearing
+    candidate found (flo.finance, a tokenized-capital-markets SDK) has NOT announced
+    investors and is pre-round, contradicting Anthemis's "Flo" showing as an exit, so
+    it was deliberately NOT attached (would be a misidentification). No artifacts
+    added; needs a human to confirm which "Flo" this is before enrichment.
